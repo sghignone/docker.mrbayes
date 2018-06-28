@@ -9,7 +9,6 @@ CPUs no. should coincide to nchains used for the analysis."
 RUN apt update && \
     apt -y upgrade && \
     apt-get install -y apt-utils \ 
-#    apt-get install -y \
 	mpich \
 	wget \
 	gcc \
