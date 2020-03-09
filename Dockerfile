@@ -22,7 +22,7 @@ RUN apt update && \
 
 WORKDIR /opt
 RUN    git clone --depth=1 https://github.com/NBISweden/MrBayes.git
-RUN    cd MrBayes/
+RUN    cd MrBayes/; ls -la
 RUN    ./configure --with-mpi --whitout-beagle
 RUN    make && make install
 
