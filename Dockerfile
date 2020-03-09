@@ -21,9 +21,11 @@ RUN apt update && \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt
-RUN    git clone --depth=1 https://github.com/NBISweden/MrBayes.git
-RUN    cd MrBayes/; ls -la
-RUN    ./configure --with-mpi --whitout-beagle
+RUN	ls -la
+RUN	git clone --depth=1 https://github.com/NBISweden/MrBayes.git
+RUN	ls -la
+RUN	cd MrBayes/; ls -la
+RUN	./configure --with-mpi --whitout-beagle
 RUN    make && make install
 
 WORKDIR /root 
