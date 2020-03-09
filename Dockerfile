@@ -23,7 +23,7 @@ RUN apt update && \
 WORKDIR /opt
 RUN	git clone --depth=1 https://github.com/NBISweden/MrBayes.git
 RUN	cd MrBayes/ && \
-	./configure --with-mpi --whitout-beagle && \
+	./configure --with-mpi --without-beagle && \
 	make && make install
 
 WORKDIR /root 
