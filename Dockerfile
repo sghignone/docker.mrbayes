@@ -26,4 +26,4 @@ RUN    cd MrBayes/
 RUN    ./configure --with-mpi --whitout-beagle
 RUN    make && make install
 
-WORKDIR /root
+WORKDIR /root 
